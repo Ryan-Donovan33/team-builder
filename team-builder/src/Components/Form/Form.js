@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card.js';
 import './Form.scss';
 
-const Form = (props) => {
+const Form = () => {
 	const [ users, setUsers ] = useState([]);
 	const [ name, setName ] = useState([]);
 	const [ email, setEmail ] = useState([]);
