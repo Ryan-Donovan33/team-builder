@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from './Components/Form';
+
 import './App.css';
 
 function App() {
@@ -18,8 +20,8 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header" />
 			<h2>This is the members list</h2>
+			<Form />
 		</div>
 	);
 }
