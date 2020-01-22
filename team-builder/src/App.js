@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [ member, setMember ] = useState([]);
+
+	const addNewMember = (info) => {
+		const newMember = {
+			name: info.name,
+			email: info.email,
+			role: info.role
+		};
+
+		const memberCollection = [ ...member, newMember ];
+
+		setMember(memberCollection);
+	};
+
+	return (
+		<div className="App">
+			<header className="App-header" />
+			<h2>This is the members list</h2>
+		</div>
+	);
 }
 
 export default App;
