@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
-import Form from './Components/Form';
+import Form from './Form/Form.js';
 
-import './App.css';
+import './App.scss';
 
 function App() {
-	const [ member, setMember ] = useState([]);
-
-	const addNewMember = (info) => {
-		const newMember = {
-			name: info.name,
-			email: info.email,
-			role: info.role
-		};
-
-		const memberCollection = [ ...member, newMember ];
-
-		setMember(memberCollection);
-	};
+	// const [ member, setMember ] = useState([
+	// 	{
+	// 		id: 1,
+	// 		name: 'Ryan',
+	// 		email: 'rdonovan@yahoo.com',
+	// 		role: 'Front-End Developer'
+	// 	}
+	// ]);
 
 	return (
 		<div className="App">
