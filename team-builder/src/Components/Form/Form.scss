@@ -1,5 +1,6 @@
 .wrapper {
 	height: 100vh;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,20 +11,20 @@
 	display: flex;
 	flex-direction: column;
 	width: 30%;
-	border: 2px solid navy;
-	padding: 15px;
+	border: 2px solid blue($color: #000000);
+	padding: 2%;
 	align-items: center;
 
 	h1 {
 		font-size: 1.8rem;
 	}
 	button {
-		padding: 10px;
-		height: 60px;
+		padding: 1%;
+		height: 10vh;
 		width: 50%;
-		border-radius: 5px;
-		font-size: 1.2rem;
-		background-color: dodgerblue;
+		border-radius: 1%;
+		font-size: 1rem;
+		background-color: seagreen;
 		color: white;
 		cursor: pointer;
 		&:hover {
@@ -43,11 +44,11 @@
 input {
 	width: 85%;
 	height: 35px;
-	border-radius: 5px;
+	border-radius: 2%;
 	font-size: 1.2rem;
-	padding: 5px;
+	padding: 1%;
 	font-weight: bold;
-	margin: 10px;
+	margin: 1%;
 }
 
 .half {
@@ -56,7 +57,7 @@ input {
 }
 
 .team-members {
-	width: 75%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -64,12 +65,12 @@ input {
 }
 
 button {
-	padding: 10px;
-	height: 60px;
+	padding: 1%;
+	height: 10vh;
 	width: 35%;
-	border-radius: 5px;
-	font-size: 1.2rem;
-	background-color: dodgerblue;
+	border-radius: 2%;
+	font-size: 1rem;
+	background-color: seagreen;
 	color: white;
 	cursor: pointer;
 	&:hover {
