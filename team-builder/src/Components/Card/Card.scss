@@ -1,0 +1,12 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 2px solid seagreen;
+	width: 33%;
+	align-items: center;
+	margin: 2%;
+	p {
+		font-size: 1.2rem;
+	}
+}
